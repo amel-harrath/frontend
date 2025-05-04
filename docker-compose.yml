@@ -1,0 +1,12 @@
+services:
+  frontend:
+    build: .
+    ports:
+      - '5173:5173'
+    environment:
+      VITE_API_URL: ${VITE_API_URL}
+    command: npm start
+    volumes:
+      - .:/src
+      - /src/node_modules
+    working_dir: /src
