@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+# User Management Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a frontend application developed using **React**, **TypeScript**, and **Tailwind CSS**, designed to interact with a backend API for user management, authentication, and more. It provides functionality for viewing, creating, editing, and deleting user profiles.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Stack
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/) - A superset of JavaScript that adds static typing.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for styling.
+- [Vite](https://vitejs.dev/) - A fast build tool and development server for modern web projects.
+- [JWT (JSON Web Tokens)](https://jwt.io/) - For user authentication and authorization.
+- [React Router](https://reactrouter.com/) - For routing and navigation within the app.
+- [Axios](https://axios-http.com/) - For making HTTP requests to the backend API.
+- [Docker](https://www.docker.com/get-started) (optional) - For containerized development environment.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+- Administrator login.
+- View, create, update, and delete users.
+- Admin dashboard for managing users.
+- JWT authentication and session management.
+- Full frontend-backend interaction via REST API.
+
+## Requirements
+
+To run this project locally, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (>= 14.x)
+- [Docker](https://www.docker.com/get-started) (if using Docker Compose)
+
+## Installation
+
+## 🛠️ Getting Started
+
+### 1. Clone the project
+
+```bash
+git clone https://github.com/amel-harrath/frontend.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Setup Environment
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+Create a .env file in the root of the project to define environment variables for the application.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
+#### Example:
+
+```bash
+VITE_API_URL= Your Backend URL
+```
+
+Make sure to set the correct API URL for your backend.
+
+### 3. Start with Docker
+
+```bash
+docker-compose up --build
+```
+
+## 🧪 Running Locally (without Docker)
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Start the dev server
+
+```bash
+npm run dev
+```
+
+Visit http://localhost:5173/ in your browser to access the application.
+
+## 🐳 Docker
+
+- App: http://localhost:5173/
+
+### Build and run locally
+
+```bash
+docker-compose up --build
 ```
