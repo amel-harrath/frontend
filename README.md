@@ -23,14 +23,12 @@ This project is a frontend application developed using **React**, **TypeScript**
 - JWT authentication and session management.
 - Full frontend-backend interaction via REST API.
 
-## Requirements
+## ⚙️ Requirements
 
 To run this project locally, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (>= 14.x)
 - [Docker](https://www.docker.com/get-started) (if using Docker Compose)
-
-## Installation
 
 ## 🛠️ Getting Started
 
