@@ -81,3 +81,11 @@ Visit http://localhost:5173/ in your browser to access the application.
 ```bash
 docker-compose up --build
 ```
+
+## 🧱 Future Enhancements
+
+1. **UI Enhancements**:  
+   Improve the design by adding more interactive features such as loading spinners, form validation indicators, and better error messages to enhance the user experience.
+
+2. **Testing**:  
+   Add unit and integration tests using libraries like [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/). This will ensure that the app is robust and maintains high quality through future updates.
