@@ -56,7 +56,7 @@ Make sure to set the correct API URL for your backend.
 docker-compose up --build
 ```
 
-## 🧪 Running Locally (without Docker)
+## 🔮 Running Locally (without Docker)
 
 ### 1. Install dependencies
 
@@ -71,6 +71,15 @@ npm run dev
 ```
 
 Visit http://localhost:5173/ in your browser to access the application.
+
+## 🧪 Seeded User for Testing
+
+You can use this user to log in and access the dashboard to manage users.
+You can use this user to test the authentication flow:
+
+Email: admin@example.com
+
+Password: testAdmin@2025
 
 ## 🐳 Docker
 
